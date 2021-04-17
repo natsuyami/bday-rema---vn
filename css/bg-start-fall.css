@@ -10,6 +10,7 @@
   width: 100%;
   height: 100%;
   transform: rotateZ(45deg);
+  z-index: -1;
 }
 
 .shooting_star {
