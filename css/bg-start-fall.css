@@ -49,7 +49,7 @@
 .shooting_star:nth-child(1) {
   top: calc(50% - -169px);
   left: calc(50% - 255px);
-  animation-delay: 9065ms;
+  animation-delay: 100ms;
 }
 .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after {
   animation-delay: 9065ms;
@@ -129,7 +129,7 @@
 .shooting_star:nth-child(11) {
   top: calc(50% - 136px);
   left: calc(50% - 175px);
-  animation-delay: 2438ms;
+  animation-delay: 500ms;
 }
 .shooting_star:nth-child(11)::before, .shooting_star:nth-child(11)::after {
   animation-delay: 2438ms;

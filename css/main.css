@@ -1,6 +1,6 @@
 body {
     background-image: url('../img/bg-start.jpg');
-    background-size: cover;
+    background-size:auto;
     height: 100vh;
     padding:0;
     margin:0;
@@ -13,4 +13,8 @@ button.main-button {
     border-color: white;
     position: absolute;
     z-index: 3;
+}
+
+audio {
+    display: none;
 }
