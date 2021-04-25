@@ -9,7 +9,14 @@
     "narrator" : "and a glamourous breast that neither too big nor small an spectacle to a man's eye",
     "narrator" : "the girl focus her attention on the video playing on her phone",
     "protagonist" : "what are you watching?",
-    "heroine": "cute babies...",
-    "narrator": "and the two watch it together, -To be continued (lol)"
-    "End": "Happy Birthday",
+    "heroine option 1": "cute babies...",
+    "heroine option 2": "ignored...",
+    "heroine option 3": "heroine getting closer, pointing her phone",
+    "narrator end one": "heroine continue to watch while the protagonist sleep, -To be continued (lol)"
+    "narrator end two": "and heroine watch it herself, -To be continued (lol)"
+    "narrator end three": "and the two watch it together, -To be continued (lol)"
+    "End One": "Happy Birthday, Image 1",
+    "End Two": "Happy Birthday, Image 2",
+    "End Three": "Happy Birthday, Image 3",
+
 }

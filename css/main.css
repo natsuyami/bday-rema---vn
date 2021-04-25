@@ -4,9 +4,10 @@ body {
     height: 100vh;
     padding:0;
     margin:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-button.main-button {
+a.main-button {
     font-size: 22px;
     background: rgba(17,114,196, 0.3);
     color: white;
@@ -17,4 +18,8 @@ button.main-button {
 
 audio {
     display: none;
+}
+
+a {
+    text-decoration: none;
 }

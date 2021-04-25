@@ -1,0 +1,47 @@
+body {
+    background: rgb(0, 0, 0);
+    background-size:auto;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+.text-box {
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-box {
+    border: rgb(104,157,246) solid 5px;
+    border-bottom: none;
+    border-left: none;
+    padding: 10px 20px;
+    height: auto;
+    flex-basis: 10%;
+}
+
+.dialog-box {
+    border-top: rgb(104,157,246) solid 5px;
+    background: rgba(38, 39, 46, 0.5);
+    padding: 10px 30px;
+    height: 20vh;
+    font-size: 14px;
+    flex-basis: 100%;
+}
+
+span.naming {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: capitalize;
+}

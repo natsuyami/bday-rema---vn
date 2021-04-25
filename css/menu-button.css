@@ -1,8 +1,8 @@
-button {
+a {
     cursor: pointer;
     outline: none;
 }
-button.outline {
+a.outline {
     position: relative;
     z-index: 3;
     background: transparent;
@@ -16,69 +16,66 @@ button.outline {
     text-transform: uppercase;
     transition: all 0.2s linear;
 }
-button.outline a {
-    text-decoration: none;
-}
-button.outline:hover {
+a.outline:hover {
     color: white;
     background: #1172c4;
     border-color: white;
     transition: all 0.2s linear;
 }
-button.outline:active {
+a.outline:active {
     border-radius: 22px;
 }
-button.white-blue {
+a.white-blue {
     font-weight: 700;
     color: #00aeef;
     border-color: white;
     background: white;
 }
-button.white-blue:hover {
+a.white-blue:hover {
     color: white;
     background: #00aeef;
     border-color: white;
 }
-button.white-green {
+a.white-green {
     font-weight: 700;
     color: #7dc21e;
     border-color: white;
     background: white;
 }
-button.white-green:hover {
+a.white-green:hover {
     color: white;
     background: #7dc21e;
     border-color: white;
 }
-button.green-white {
+a.green-white {
     font-weight: 700;
     color: #7dc21e;
     border-color: #7dc21e;
     background: transparent;
 }
-button.green-white:hover {
+a.green-white:hover {
     color: white;
     background: #7dc21e;
     border-color: #7dc21e;
 }
-button.purple-white {
+a.purple-white {
     font-weight: 700;
     color: #664e96;
     border-color: #664e96;
     background: transparent;
 }
-button.purple-white:hover {
+a.purple-white:hover {
     color: white;
     background: #664e96;
     border-color: #664e96;
 }
-button.white-purple {
+a.white-purple {
     font-weight: 700;
     color: #664e96;
     border-color: white;
     background: white;
 }
-button.white-purple:hover {
+a.white-purple:hover {
     color: white;
     background: #664e96;
     border-color: white;
