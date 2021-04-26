@@ -8,22 +8,34 @@
         <title>Birthday XXX</title>
 
         <link href="./css/story.css" rel="stylesheet">
+        <link href="./css/loader.css" rel="stylesheet">
     </head>
 
     <body class="shooting-bg">
         
+        <div class="loader-page" id="pageLoader">
+            <div class="loader">
+                <div class="loader-wheel"></div>
+                <div class="loader-text"></div>
+            </div>
+        </div>
+
         <div class="text-box">
             <div class="name-box">
                 <span class="naming">Narrator</span>
             </div>
             <div class="dialog-box">
-                <p>From a far far.. far.... far away.... traveling man...</p>
+                <div class="text-holder" id="textHolder">
+                    <p>From a far far.. far.... far away.... traveling man...</p>
+                </div>
             </div>
         </div>
 
-        <audio loop autoplay id="standByMeAudio">
+        <audio loop id="standByMeAudio">
             <source src="audio/stand_by_me_cover_by_kobasolo.mp3" type="audio/mp3" />
         </audio>
+
+        <script src="./js/jquery-3.6.0.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
