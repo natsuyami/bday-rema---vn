@@ -1,6 +1,7 @@
 body {
     background-image: url('../img/bg-start.jpg');
     background-size:auto;
+    background-repeat: round;
     height: 100vh;
     padding:0;
     margin:0;
