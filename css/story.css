@@ -37,7 +37,7 @@ audio {
     border-bottom: none;
     border-left: none;
     padding: 10px 20px;
-    height: auto;
+    height: 27px;
     flex-basis: 10%;
 }
 
@@ -59,15 +59,19 @@ span.naming {
     text-transform: uppercase;
 }
 
-p {
+p#scriptText {
     font-size: 1.2em;
     font-weight: 500;
-    text-transform: capitalize;
-    display: none;
-    overflow: hidden;
 }
 
-.text-holder {
+.art-bg {
+    top: 0;
+    left: 0;
+    margin: 0px;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
+    position: absolute;
+    background-size: auto;
+    background: rgb(0, 0, 0);
+    z-index: -1;
 }
