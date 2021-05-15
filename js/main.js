@@ -104,7 +104,8 @@ function changeBackground(index) {
         case 2 : 
             $('#pageBg').fadeOut(300, function () {
 
-                $('#pageBg').css({ 'background-image': "url('img/" + background[0] + "')" });
+                $('#pageBg').css({ 'background-image': "url('img/" + background[0] + "')", 'background-size': "cover", "background-repeat": "no-repeat",
+                "background-position": "center center" });
 
                 $('#pageBg').fadeIn(300, "swing");
             });
@@ -112,7 +113,8 @@ function changeBackground(index) {
         case 5 : 
             $('#pageBg').fadeOut(300, function () {
 
-                $('#pageBg').css({ 'background-image': "url('img/" + background[1] + "')" });
+                $('#pageBg').css({ 'background-image': "url('img/" + background[1] + "')", 'background-size': "cover", "background-repeat": "no-repeat",
+                "background-position": "center center"  });
 
                 $('#pageBg').fadeIn(300, "swing");
             });
@@ -120,7 +122,8 @@ function changeBackground(index) {
         case 9 : 
             $('#pageBg').fadeOut(300, function () {
 
-                $('#pageBg').css({ 'background-image': "url('img/" + background[2] + "')" });
+                $('#pageBg').css({ 'background-image': "url('img/" + background[2] + "')", 'background-size': "cover", "background-repeat": "no-repeat",
+                "background-position": "center center"  });
 
                 $('#pageBg').fadeIn(300, "swing");
             });
@@ -213,7 +216,8 @@ function lastDialogue(str, id, arrLength, bgImg) {
         setTimeout(function() {
             $('body').fadeOut(300, function () {
                 document.body.innerHTML = "";
-                $('body').css({ 'background-image': "url('img/" + bgImg + "')" });
+                $('body').css({ 'background-image': "url('img/" + bgImg + "')", 'background-size': "cover", "background-repeat": "no-repeat",
+                "background-position": "center center" });
     
                 $('body').fadeIn(300, "swing");
             });
