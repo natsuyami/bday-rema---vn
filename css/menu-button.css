@@ -1,8 +1,8 @@
-a {
+a, button {
     cursor: pointer;
     outline: none;
 }
-a.outline {
+a.outline, button.outline {
     position: relative;
     z-index: 3;
     background: transparent;
@@ -16,66 +16,66 @@ a.outline {
     text-transform: uppercase;
     transition: all 0.2s linear;
 }
-a.outline:hover {
+a.outline:hover, button.outline:hover {
     color: white;
     background: #1172c4;
     border-color: white;
     transition: all 0.2s linear;
 }
-a.outline:active {
+a.outline:active, button.outline:active {
     border-radius: 22px;
 }
-a.white-blue {
+a.white-blue, button.white-blue {
     font-weight: 700;
     color: #00aeef;
     border-color: white;
     background: white;
 }
-a.white-blue:hover {
+a.white-blue:hover, button.white-blue:hover {
     color: white;
     background: #00aeef;
     border-color: white;
 }
-a.white-green {
+a.white-green, button.white-green {
     font-weight: 700;
     color: #7dc21e;
     border-color: white;
     background: white;
 }
-a.white-green:hover {
+a.white-green:hover, button.white-green:hover {
     color: white;
     background: #7dc21e;
     border-color: white;
 }
-a.green-white {
+a.green-white, button.green-white {
     font-weight: 700;
     color: #7dc21e;
     border-color: #7dc21e;
     background: transparent;
 }
-a.green-white:hover {
+a.green-white:hover, button.green-white:hover {
     color: white;
     background: #7dc21e;
     border-color: #7dc21e;
 }
-a.purple-white {
+a.purple-white, button.purple-white {
     font-weight: 700;
     color: #664e96;
     border-color: #664e96;
     background: transparent;
 }
-a.purple-white:hover {
+a.purple-white:hover, button.purple-white:hover {
     color: white;
     background: #664e96;
     border-color: #664e96;
 }
-a.white-purple {
+a.white-purple, button.white-purple {
     font-weight: 700;
     color: #664e96;
     border-color: white;
     background: white;
 }
-a.white-purple:hover {
+a.white-purple:hover, button.white-purple:hover {
     color: white;
     background: #664e96;
     border-color: white;

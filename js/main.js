@@ -58,8 +58,6 @@ $(document).ready(function() {
 
     var i = 1;
     $("body").click(function() {
-        console.log("Executing click i=" + i + " dialogue length=" + dialogue.length);
-        
         changeBackground(i);
         eraseWriteChar(dialogue[i].name, "#charName");
         eraseWriteChar(dialogue[i].dialogue, "#scriptText");
@@ -76,26 +74,29 @@ function musicPlay() {
 }
 
 function eraseWriteChar(str, id) {
-    console.log("Executing eraseWriteChar, erasing existing text, param string=" + str + ", id=" + id);
-
+    let timeInterval = 0;
     $(id).empty();
     for (var i = 0; i < str.length; i++) {
-        delayAppend(str[i], id, i);
+        timeInterval = delayAppend(str[i], id, i);
     }
+
+    buttonProp(str, timeInterval);
 }
 
 function writeChar(str, id) {
-    console.log("Executing writeChar with string=" + str + ", id=" + id);
-
     for (var i = 0; i < str.length; i++) {
         delayAppend(str[i], id, i);
     }
 }
 
 function delayAppend(letter, id, i) {
+    timeOut = 0 + ((i + 50) * 10);
+
     setTimeout(function() {
         $(id).append(letter);
-    }, 0 + ((i + 50) * 10));
+    }, timeOut);
+
+    return timeOut;
 }
 
 function changeBackground(index) {
@@ -126,5 +127,96 @@ function changeBackground(index) {
             break;
         default :
             break;   
+    }
+}
+
+function buttonProp(str, timeInterval) {
+    if (str == "what are you watching?") {
+        setTimeout(function() {
+            $("#optionButtons").css({ 'display': "flex" }).fadeIn(300, "swing");
+
+            $(".button-opt").click(function() {
+                console.log(this.value);
+                switch(this.value) {
+                    case "endingOne":
+                        let optionOne = [ 
+                            {
+                                "name" : "Heroine",
+                                "dialogue" : "kpop music video..."
+                            },
+                            {
+                                "name" : "Narrator",
+                                "dialogue" : "heroine continue to watch while the protagonist sleep, -To be continued (lol)"
+                            }
+                        ];
+                        optionHandler(optionOne, "HB-Route-Two.jpg");
+                        break;
+                    case "endingTwo":
+                        let optionTwo = [ 
+                            {
+                                "name" : "Heroine",
+                                "dialogue" : "ignored..."
+                            },
+                            {
+                                "name" : "Narrator",
+                                "dialogue" : "and heroine watch it herself, -To be continued (lol)"
+                            }
+                        ];
+                        optionHandler(optionTwo, "HB-Route-Three.jpg");
+                        break;
+                    case "endingThree":
+                        let optionThree = [ 
+                            {
+                                "name" : "Heroine",
+                                "dialogue" : "heroine getting closer, pointing her phone"
+                            },
+                            {
+                                "name" : "Narrator",
+                                "dialogue" : "and the two watch it together, -To be continued (lol)"
+                            }
+                        ];
+                        optionHandler(optionThree, "HB-Route-One.jpg");
+                        break;
+                    default :
+                        break;   
+                }
+            });
+        }, timeInterval + 500);
+    }
+}
+
+function optionHandler(addedDialogue, bgImg) {
+    let i = 0;
+    $("#optionButtons").empty();
+    $("#optionButtons").css({ 'display': "none" }).fadeIn(300, "swing");
+    $('body').off('click');
+    $('body').on('click', function() {       
+
+        lastDialogue(addedDialogue[i].name, "#charName", i, bgImg);
+        lastDialogue(addedDialogue[i].dialogue, "#scriptText", i, bgImg);
+
+        if (i < addedDialogue.length - 1) {
+            i++;
+        }
+    });
+}
+
+
+function lastDialogue(str, id, arrLength, bgImg) {
+    let timeInterval = 0;
+    $(id).empty();
+    for (var i = 0; i < str.length; i++) {
+        timeInterval = delayAppend(str[i], id, i);
+    }
+
+    if (arrLength == 1) {
+        setTimeout(function() {
+            $('body').fadeOut(300, function () {
+                document.body.innerHTML = "";
+                $('body').css({ 'background-image': "url('img/" + bgImg + "')" });
+    
+                $('body').fadeIn(300, "swing");
+            });
+        }, timeInterval + 1400);
     }
 }

@@ -1,0 +1,152 @@
+Release 1.2: 1/1/93 Fix Y? in PhuongThaoH.
+                    Improve ? in AnhMinh and AnhMinhH
+
+
+This font package contains 3 TrueType fonts
+   Tha Hu+o+ng 
+   A'nh Minh
+   Phu+o+ng Tha?o 
+                    by Cuong Bui, The TriChlor Group
+
+
+The TriChlor TrueType fonts, with the transformation provided by Windows
+(regular, italic, bold and bold-italic) and scalable size,	
+should allow one to generate "beautiful" and
+professional looking publication in Vietnamese, such as
+ba'o Xua^n, dda(.c san ... bi'ch ba'o, even book.
+
+And the work can even be distributed on DOS, Windows and Unix
+platforms, with the same data. 
+
+The fonts use VISCII 1.1 encoding by Viet-Std.
+
+If you use TriChlor tools to generate publications, we will be
+glad to receive a souvenir/friendship copy.
+
+Installation
+============
+0) Erase the old version of these fonts if you have them installed previously.
+   First, click on the "Control" icon, then "ABC" , then when a panel listing
+   the fonts available, select the old font, then select delete. If you
+   don't delete the old font , there is a chance that because of font
+   having the same name, the old font will always get selected.
+   For this font package, look for old fonts with the names:
+        A'nhMinh, ThaHuong, PhuongThao, and the Hoa version
+   then delete those first.
+
+1) Insert the floppy containing the package file VNFONT1X.EXE
+  
+1) Insert the floppy containing the package file VNFONT2X.EXE
+  
+2) Make a directory , for ex. VNFONTS:
+     C:
+     MKDIR C:\VNFONTS
+   then change to that directory:
+     CD C:\VNFONTS
+3) Copy the file VNFONT2X.EXE from the floppy:
+     COPY B:VNFONT2X.EXE C:
+   and run it to extract the fonts:
+     C:VNFONT2X
+
+   After this, you will have the fonts
+
+      NORMAL  fonts : th____11.ttf, am____11.ttf , pt____11.ttf
+      HOA     fonts : thh___11.ttf, amh___11.ttf , pth___11.ttf
+
+   plus this readme file, and the copyright file.
+
+4) Run Windows. Then double click on the Control icon. It will
+   pop up a panel. Looks for the icon "ABC" (for fonts), then
+   double click on this icon. This in turn will pop up another
+   window, with panes showing what fonts currently installed.
+   Click on the "Add" button, then select
+   the directory containing the Vietnamese fonts. The
+   fonts' names will be displayed on a panel. Click on a font
+   name and "OK" to install it. Repeat this procedure for the
+   other font names. Then close the Control window.
+
+5) To use Vietnamese fonts in a Windows application, select
+   the font and use it.
+
+6) To type in Vietnamese for any Windows application, you need the program
+   Winvnkey also by TriChlor.
+   Or generate a VISCII file using vietdos/vnelvis, vps, viet1p6, butviet ...
+   and read in the file. Commercial VN software such as T-Script by TIEN can
+   also read and write in VISCII . Or if you have no access to 8-bit tool,
+   write in Viet-Net/SCV/VIQR style, and use the program viet7to8 to
+   convert it to VISCII.
+   For "Write", make sure you select "No conversion".
+   For Microsoft Word, choose the "Text only" filter.
+   Then select the whole text, and change to Vietnamese fonts.
+   Also see the note about Hoa font below.
+
+7) To print is easy. Just click on print. Any printer supported
+   by Windows will print Vietnamese.
+
+8) To print on a Unix network PostScript printer: in Windows,
+   select a PostScript printer, then select "Print to a File".
+   Return to the program, start printing. A window
+   will pop up and ask you for a file name. Enter a file name.
+   Transfer this file to Unix (using ftp or whatever), then
+   just print it (lpr filename).
+
+Testing
+=======
+   After you installed the fonts, use Write to open the enclosed sample
+   file "baogio.wri". Play around with the point size, typeface, italic,
+   bold ... The print document looks much better ;-). To print, just
+   click on File, and select Print. All printers are supported via
+   Windows.
+ 
+
+The HOA (uppercase) fonts
+=========================
+Each typeface comes with 2 fonts, a normal font and a HOA font,
+with the HOA font name ended in H. For example:
+     ThaHuong   : normal font, both lowercase and uppercase chars.
+     ThaHuongH  : HOA font, all uppercase characters.
+
+In order to produce some of the uppercase chars, particularly
+the ones coded in C0 ( A(? A(~ A^~ Y? Y~ Y. ) , you may need
+to switch to the corresponding HOA font for each of the
+typeface. Basically, in the HOA font, all the chars are capital
+(uppercase), so if you type "a?" you will get "A?", or select
+"a?" in the text, and switch to HOA font to get "A?" . The
+reason is Vietnamese has 134 chars, and usable slots are less
+than 128 :-( . VISCII 1.1 has been designed so that all
+lowercase chars and most uppercase chars are usable by 
+most existing software. Some software uses certain Vietnamese
+chars for their internal purpose, most of the time in the
+uppercase area. Therefore, when one wants to produce certain
+uppercase using these software, just switch to HOA font.
+Each font comes with a normal font, and a HOA font to alleviate
+this problem. Normally, the normal font should take care of
+most of your needs.
+
+Have fun writing !
+
+==================
+The TriChlor Group
+==================
+
+We can be reached at:
+ via email : trichlor@haydn.stanford.edu
+ via normal mail:
+    TriChlor 
+    3388 Burgundy Dr.
+    San Jose, CA 95132
+
+VISCII is the 8-bit Vietnamese coding scheme by Viet-Std. For
+more information, contact 
+ via email : viet-std@haydn.stanford.edu
+ via normal mail:
+    Viet-Std
+    1212 Somerset Dr.
+    San Jose, CA 95132
+
+
+Bu`i Minh Cu+o+ng
+(bui@berlioz.nsc.com)
+
+
+
