@@ -71,7 +71,9 @@ p#scriptText {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     background: rgb(0, 0, 0);
     z-index: -1;
 }
